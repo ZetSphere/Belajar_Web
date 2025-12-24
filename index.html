@@ -1,78 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning Web</title>
+    <title>ZetSphere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Belajar HTML Full  -->
-    <!-- Header -->
+    <!-- HEADER & NAVBAR -->
     <header>
-      <!-- Judul Website -->
-      <h1>Welcome to Our Website</h1>
-      <!-- Navbar = Isi Link Navigasi -->
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">Zet<span>Sphere</span></a>
+
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
     </header>
-    <!-- main section -->
-    <main>
-      <article id="about">
-        <h3>Hi I'm Ahmad!</h3>
-        <p>
-          Junior Web Developer and AI Enthusiast
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, quis
-          corrupti, totam, nam non eaque at excepturi culpa assumenda voluptas
-          aut ratione ex aliquid? Veritatis at deleniti amet praesentium rem!
-          Quisquam, provident non! Nam, architecto? Maxime ea distinctio odio.
-          Excepturi alias neque dolorem hic perferendis maxime corrupti
-          consectetur dicta harum asperiores a sint eaque qui tenetur nobis,
-          eveniet fugit libero. Quo distinctio aspernatur facilis excepturi
-          perspiciatis debitis earum voluptate illum adipisci optio? Numquam,
-          repellat! Esse, eum eveniet. Labore, aliquam. Reiciendis nisi dolore
-          doloribus adipisci. Labore mollitia quam autem unde quis. Officia
-          animi rem totam temporibus? Labore quod, odio ea provident eum saepe
-          consequatur omnis neque? Fugit molestias nam ullam obcaecati impedit
-          labore? Voluptate ex quidem, minus quas accusamus laboriosam odio? Quo
-          eos consequatur possimus earum mollitia error voluptates quae quaerat,
-          natus perferendis cum odio nemo? Eaque, odit ea delectus eveniet
-          voluptatem dicta tempora dolores incidunt, molestiae architecto,
-          voluptatibus nam labore! Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Aspernatur autem minus cum obcaecati voluptates
-          incidunt animi eum accusantium a, temporibus non et, dignissimos alias
-          saepe, magni quae? Fugit, tempore laudantium?
-        </p>
-      </article>
 
-      <section id="service">
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Tailwind CSS</li>
-          <li>Git/Github</li>
-        </ul>
-        <button id="btn" onclick="toggleBtn()">Click Here</button>
-      </section>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="fade-in">
+              Fullstack Developer
+              <br />
+              <span style="color: var(--primary)">& AI Enthusiast</span>
+            </h1>
+            <p class="fade-in">
+              Membuat website modern dengan teknologi terbaru. Spesialis HTML,
+              CSS, JavaScript, dan React.
+            </p>
+            <div class="hero-btns fade-in">
+              <a href="#projects" class="btn btn-primary">Lihat Projek</a>
+              <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+            </div>
+          </div>
+          <div class="hero-image fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Developer workspace"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact">
-        <p>Gmail : ahmad@gmail.com</p>
-      </section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-content">
+          <div class="about-image fade-in">
+            <img src="L art.jpg" alt="Profile" />
+          </div>
+          <div class="about-text fade-in">
+            <h3>Hi, Saya Ahmad!</h3>
+            <p>
+              Junior Web Developer dengan passion di bidang Frontend Development
+              dan AI. Saya memiliki pengalaman 2 tahun dalam mengembangkan
+              website responsif dan aplikasi web modern.
+            </p>
+            <p>
+              Saat ini fokus mempelajari React, Node.js, Python, dan teknologi
+              web terbaru untuk menciptakan pengalaman pengguna yang luar biasa.
+            </p>
 
-      <section>
-        <form action="">
-          <input type="text" />
-        </form>
-      </section>
-    </main>
-    <footer>&copy;Copyright Zamzami Ahmad</footer>
+            <h4>Skills:</h4>
+            <div class="skills">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Node Js</span>
+              <span class="skill-tag">Express Js</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section
+      id="projects"
+      class="section"
+      style="background: rgba(108, 99, 255, 0.05)"
+    >
+      <div class="container">
+        <h2 class="section-title fade-in">My Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="E-commerce Project"
+              />
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Website</h3>
+              <p>
+                Website e-commerce modern dengan fitur cart, checkout, dan
+                payment gateway.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe API</span>
+              </div>
+              <a href="#" class="btn btn-outline">Live Demo</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Dashboard Project"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Admin Dashboard</h3>
+              <p>Dashboard admin dengan chart, table, dan CRUD operations.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Firebase</span>
+              </div>
+              <a href="#" class="btn btn-outline">Live Demo</a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Travel App"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Travel Booking App</h3>
+              <p>
+                Aplikasi booking travel dengan fitur maps, hotel search, dan
+                booking system.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Google Maps API</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Express.js</span>
+              </div>
+              <a href="#" class="btn btn-outline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>ahmad.dev@example.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+62 812 3456 7890</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Jakarta, Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form fade-in">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Masukkan nama Anda"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="email@contoh.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Tulis pesan Anda..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">
+              Zet<span style="color: #6c63ff">Sphere</span>
+            </div>
+            <p>
+              Frontend Developer specializing in modern web technologies and
+              creating amazing user experiences.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Frontend Consulting</a></li>
+              <li><a href="#">Code Review</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2024 ZetSphere. All rights reserved. | Made with ❤️ by Ahmad
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
   </body>
 </html>
